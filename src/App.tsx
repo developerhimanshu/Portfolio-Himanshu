@@ -5,12 +5,14 @@ import Home from "./components/home";
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className="h-full bg-[#121212] text-white">
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

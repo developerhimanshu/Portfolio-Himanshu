@@ -4,24 +4,47 @@ import { HashLink } from "react-router-hash-link";
 const Nav: React.FC = () => {
   // const [data, setData] = useState("");
   return (
-    <nav className="flex justify-around h-20 w-100vw  bg-yellow-50 items-center uppercase sticky top-0">
+    <nav className="flex justify-around h-20 w-100vw  bg-[#282829b7] items-center uppercase sticky top-0 backdrop-filter backdrop-blur-lg border-b border-gray-700 ">
       <div className="flex gap-5">
         <img src="" alt="Profile" />
-        <a href="" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/himanshu-singh-graphicera/"
+          rel="noopener"
+          target="_blank"
+          className="hover:text-yellow-500"
+        >
           LinkedIn
         </a>
-        <a href="https://github.com/developerhimanshu" target="_blank">
+        <a
+          href="https://github.com/developerhimanshu"
+          rel="noopener"
+          target="_blank"
+          className="hover:text-yellow-500"
+        >
           Github
         </a>
       </div>
-      <HashLink to="/#">Himanshu Singh</HashLink>
+      <HashLink to="/#" className="hover:text-yellow-500">
+        Himanshu Singh
+      </HashLink>
       <div className="flex gap-5">
-        <HashLink to="/#">Home</HashLink>
-        <HashLink to="/#projects">Projects</HashLink>
-        <a href="" target="_blank">
+        <HashLink to="/#" className="hover:text-yellow-500">
+          Home
+        </HashLink>
+        <HashLink to="/#projects" className="hover:text-yellow-500">
+          Projects
+        </HashLink>
+        <a
+          href="https://drive.google.com/file/d/1pRCfuziHMI55WgAmMplhFmm448v8lC6y/view?usp=sharing"
+          target="_blank"
+          rel="noopener"
+          className="hover:text-yellow-500"
+        >
           Resume
         </a>
-        <HashLink to="/#contact">Contact</HashLink>
+        <HashLink to="/#contact" className="hover:text-yellow-500">
+          Contact
+        </HashLink>
       </div>
     </nav>
   );
