@@ -35,6 +35,10 @@ const ProfileMain: React.FC = () => {
             <span className="text-yellow-500">Tools:</span> Postman, Git and
             Github.
           </p>
+          <p>
+            <span className="text-yellow-500">Currently Exploring: </span>
+            MongoDB and Express.js
+          </p>
         </div>
       </div>
     </div>
