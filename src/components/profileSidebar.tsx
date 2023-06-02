@@ -3,12 +3,12 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { FaMapPin } from "react-icons/fa";
 const ProfileSidebar: React.FC = () => {
   return (
-    <div className="h-[80vh] w-[20vw] mt-12 ml-14 flex flex-col bg-[#1E1E1F]  items-center rounded-xl border-[1px] border-gray-500">
+    <div className="h-[80vh] w-[20vw] mt-12 ml-14 flex flex-col bg-[#1E1E1F]  items-center rounded-xl border-[1px] border-gray-500 fixed top-[4.2rem]">
       <div className="mt-[2rem] flex gap-3 flex-col items-center">
         <div
           className="h-[180px] w-[180px] bg-no-repeat bg-cover rounded-full "
           style={{
-            backgroundImage: "url(public/images/profile.jpg)",
+            backgroundImage: "url(/images/profile.jpg)",
           }}
         ></div>
         <h1 className="text-4xl font-semibold ">Himanshu Singh</h1>

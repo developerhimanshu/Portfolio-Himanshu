@@ -2,12 +2,12 @@ import React from "react";
 
 const ProfileMain: React.FC = () => {
   return (
-    <div className="h-[80vh] w-[70vw] mt-12 ml-8  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6">
+    <div className="h-[80vh] w-[70vw] mt-10 ml-[27%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6">
       <h1 className="font-bold text-[2rem]">About Me</h1>
       <div className="w-[80px] border-b-[5px] border-b-yellow-500 "></div>
       <div className="mt-7 text-gray-300 text-[1.3rem] flex flex-col gap-4">
         <p>
-          I'm <span className="text-yellow-500">frontend Developer</span> from
+          I'm a <span className="text-yellow-500">frontend Developer</span> from
           India, I build apps using{" "}
           <span className="text-yellow-500">React.js</span>
         </p>

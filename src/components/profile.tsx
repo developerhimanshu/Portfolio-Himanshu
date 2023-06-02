@@ -4,7 +4,7 @@ import ProfileMain from "./profileMain";
 
 const Profile: React.FC = () => {
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex" id="/">
       <ProfileSidebar />
       <ProfileMain />
     </div>
