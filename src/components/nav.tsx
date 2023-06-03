@@ -4,9 +4,14 @@ import { HashLink } from "react-router-hash-link";
 const Nav: React.FC = () => {
   // const [data, setData] = useState("");
   return (
-    <nav className="flex justify-around h-20 w-100vw  bg-[#282829b7] items-center uppercase sticky top-0 backdrop-filter backdrop-blur-lg border-b border-gray-700 ">
-      <div className="flex gap-5">
-        <img src="" alt="Profile" />
+    <nav className="flex justify-around h-20 w-100vw  bg-[#282829b7] items-center uppercase sticky top-0 backdrop-filter backdrop-blur-lg border-b border-gray-700 z-10">
+      <div className="flex gap-5 items-center">
+        <div
+          className="h-[40px] w-[40px] bg-no-repeat bg-cover rounded-full profile "
+          style={{
+            backgroundImage: "url(/images/profile.jpg)",
+          }}
+        ></div>
         <a
           href="https://www.linkedin.com/in/himanshu-singh-graphicera/"
           rel="noopener"
