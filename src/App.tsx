@@ -5,7 +5,7 @@ import Home from "./components/home";
 
 const App: React.FC = () => {
   return (
-    <div className="h-full bg-[#121212] text-white">
+    <div className="h-full bg-[#121212] text-white transition-all ease-in delay-75">
       <Router>
         <Nav />
         <Routes>

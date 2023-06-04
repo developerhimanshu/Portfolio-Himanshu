@@ -1,32 +1,40 @@
 import React from "react";
 
+import { IconBaseProps } from "react-icons";
+import { FaLinkedin, FaPhone, FaGithub, FaTwitter } from "react-icons/fa";
 type contactType = {
   name: string;
   mobleNo?: string;
   url?: string;
   bgColor: string;
+  icon: React.ElementType<IconBaseProps>;
 };
 
 const social: contactType[] = [
   {
     name: "Mobile",
+    url: "#",
     mobleNo: "8171460265",
-    bgColor: "#000000",
+    bgColor: "#ffffff",
+    icon: FaPhone,
   },
   {
     name: "LinkedIn",
-    url: "",
-    bgColor: "#FFFFFF",
+    url: "https://www.linkedin.com/in/himanshu-singh-graphicera/",
+    bgColor: "#0A66C2",
+    icon: FaLinkedin,
   },
   {
     name: "Github",
     url: "https://github.com/developerhimanshu",
     bgColor: "#FFFFFF",
+    icon: FaGithub,
   },
   {
     name: "Twitter",
-    url: "",
-    bgColor: "#FFFFFF",
+    url: "https://twitter.com/HimanshuChamyal",
+    bgColor: "#1A8CD8",
+    icon: FaTwitter,
   },
 ];
 const Contact: React.FC = () => {
@@ -38,14 +46,19 @@ const Contact: React.FC = () => {
         <p className="text-center font-extrabold text-[4rem] uppercase">
           Himanshu Singh
         </p>
-        <div className="w-[100%] grid grid-cols-2 gird-rows-2 gap-4 place-items-center mt-[3rem]">
+        <div className="w-[30rem] ml-[25%] grid grid-cols-2 gird-rows-2 gap-4 place-items-center mt-[3rem]">
           {social.map((s) => (
-            <div className="w-[50%] border-gray-500 border-[1px] rounded-lg p-3 flex flex-col items-center justify-center">
-              <a href={s.url} target="_blank">
-                {s.name}
-              </a>
-              {s.name == "Mobile" ? <div>{s.mobleNo}</div> : ""}
-            </div>
+            <a
+              href={s.url}
+              target="_blank"
+              className="flex flex-col items-center gap-4 hover:bg-white/30 hover:rounded-lg transition-all ease-in"
+            >
+              <div className="w-[12rem] h-[8rem] border-gray-500 border-[1px] rounded-lg p-3 flex flex-col gap-4 items-center justify-center">
+                {<s.icon style={{ color: s.bgColor }} size={40} />}
+                {s.name != "Mobile" ? s.name : ""}
+                {s.name == "Mobile" ? <div>{s.mobleNo}</div> : ""}
+              </div>
+            </a>
           ))}
         </div>
       </div>
