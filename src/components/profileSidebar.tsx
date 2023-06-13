@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { FaMapPin } from "react-icons/fa";
 const ProfileSidebar: React.FC = () => {
   return (
-    <div className="h-[80vh] w-[20vw] mt-12 ml-14 flex flex-col bg-[#1E1E1F]  items-center rounded-xl border-[1px] border-gray-500 fixed top-[4.2rem]">
+    <div className="h-[80vh] xl:w-[20vw] lg:w-[30vw] lg:pb-0 md:h-[80vh]  sm:w-[70vw] sm:pb-7  mt-12 lg:ml-14 flex flex-col bg-[#1E1E1F]  items-center rounded-xl border-[1px] border-gray-500 lg:fixed top-[4.2rem]">
       <div className="mt-[2rem] flex gap-3 flex-col items-center">
         <div
           className="h-[180px] w-[180px] bg-no-repeat bg-cover rounded-full "

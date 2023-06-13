@@ -4,7 +4,10 @@ import ProfileMain from "./profileMain";
 
 const Profile: React.FC = () => {
   return (
-    <div className="h-screen flex" id="/">
+    <div
+      className="lg:h-screen h-auto relative  items-center lg:flex lg:items-start"
+      id="/"
+    >
       <ProfileSidebar />
       <ProfileMain />
     </div>

@@ -40,18 +40,18 @@ const social: contactType[] = [
 const Contact: React.FC = () => {
   return (
     <div className="h-screen border-2 border-[#121212]" id="contact">
-      <div className="w-[70vw] h-[80vh] mt-[7.5rem] ml-[27%] bg-[#1E1E1F] rounded-xl border-[1px] border-gray-500 py-7 px-6 relative ">
+      <div className="md:h-[80vh] md:w-[70vw] sm:w-[100vw] lg:w-[60vw] mt-10 xl:ml-[27%] lg:ml-[37%] relative md:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
         <h1 className="font-bold text-[2rem] ">Contact Me</h1>
         <div className="w-[130px] border-b-[5px] border-b-yellow-500 ]"></div>
         <p className="text-center font-extrabold text-[4rem] uppercase">
           Himanshu Singh
         </p>
-        <div className="w-[30rem] ml-[25%] grid grid-cols-2 gird-rows-2 gap-4 place-items-center mt-[3rem]">
+        <div className="md:w-[30rem] ml-[25%] grid md:grid-cols-2 md:gird-rows-2 gap-4 place-items-center mt-[3rem]">
           {social.map((s) => (
             <a
               href={s.url}
               target="_blank"
-              className="flex flex-col items-center gap-4 hover:bg-white/30 hover:rounded-lg transition-all ease-in"
+              className="flex flex-col rounded-lg items-center bg-[#9999995a] gap-4 hover:bg-white/30 hover:rounded-lg transition-all ease-in backdrop-filter backdrop-blur-lg"
             >
               <div className="w-[12rem] h-[8rem] border-gray-500 border-[1px] rounded-lg p-3 flex flex-col gap-4 items-center justify-center">
                 {<s.icon style={{ color: s.bgColor }} size={40} />}
