@@ -39,7 +39,7 @@ const social: contactType[] = [
 ];
 const Contact: React.FC = () => {
   return (
-    <div className="border-2 pb-6 border-[#121212]" id="contact">
+    <div className="md:border-2 pb-6 border-[#121212]" id="contact">
       <div className="h-[80vh] md:w-[92vw] sm:w-[92vw] lg:w-[60vw] mt-10 xl:ml-[20%] lg:ml-[25%] lg:left-[12%] relative   bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
         <h1 className="font-bold text-[2rem] ">Contact Me</h1>
         <div className="w-[130px] border-b-[5px] border-b-yellow-500 ]"></div>
