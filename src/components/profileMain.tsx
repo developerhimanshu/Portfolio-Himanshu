@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfileMain: React.FC = () => {
   return (
-    <div className="h-[80vh] md:w-[70vw] sm:w-[100vw] lg:w-[60vw] mt-10 xl:ml-[27%] lg:ml-[37%] relative md:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
+    <div className="md:h-[80vh] md:w-[92vw] sm:w-[92vw] lg:w-[60vw] mt-10 xl:ml-[20%] lg:ml-[25%] relative lg:left-[12%] bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
       <h1 className="font-bold text-[2rem]">About Me</h1>
       <div className="w-[80px] border-b-[5px] border-b-yellow-500 "></div>
       <div className="mt-7 text-gray-300 text-[1.3rem] flex flex-col gap-4">

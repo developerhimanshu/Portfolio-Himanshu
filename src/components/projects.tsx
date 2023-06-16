@@ -33,8 +33,11 @@ const prjcts: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <div className="h-screen border-2 border-[#121212]" id="projects">
-      <div className="h-[80vh] md:w-[70vw] sm:w-[100vw] lg:w-[60vw] mt-10 xl:ml-[27%] lg:ml-[37%] relative md:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
+    <div
+      className="h-screen border-2 lg:pt-[4.5rem] border-[#121212]"
+      id="projects"
+    >
+      <div className="h-[80vh] md:w-[92vw] sm:w-[92vw] lg:w-[60vw] mt-10 xl:ml-[20%] lg:ml-[25%] relative lg:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
         <h1 className="font-bold text-[2rem]">Projects</h1>
         <div className="w-[60px] border-b-[5px] border-b-yellow-500 "></div>
         <div className="flex flex-col items-center mt-6">
