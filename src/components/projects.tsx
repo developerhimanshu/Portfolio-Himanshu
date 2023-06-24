@@ -22,7 +22,7 @@ const prjcts: Project[] = [
   },
   {
     id: 2,
-    name: "Netflix",
+    name: "Netflix Clone",
     description: "Movie Streaming application",
     imgUrl: "/images/project2.png",
     deployUrl: "https://netflix-clone-298ae.web.app/",
@@ -33,11 +33,8 @@ const prjcts: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <div
-      className="h-screen md:border-2 lg:pt-[4.5rem] border-[#121212]"
-      id="projects"
-    >
-      <div className="h-[80vh] md:w-[92vw] sm:w-[92vw] lg:w-[60vw] mt-10 xl:ml-[20%] lg:ml-[25%] relative lg:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
+    <div className=" md:border-2 lg:pt-[4.5rem] border-[#121212]" id="projects">
+      <div className="lg:h-[80vh] max-h-[80vh] md:w-[92vw] sm:w-[92vw] lg:w-[60vw] mt-10 xl:ml-[20%] lg:ml-[25%] relative lg:left-[12%]  bg-[#1E1E1F]  rounded-xl border-[1px] border-gray-500 py-7 px-6 lg:block md:flex md:flex-col">
         <h1 className="font-bold text-[2rem]">Projects</h1>
         <div className="w-[60px] border-b-[5px] border-b-yellow-500 "></div>
         <div className="flex flex-col items-center mt-6">
@@ -50,7 +47,7 @@ const Projects: React.FC = () => {
             showThumbs={false}
             animationHandler="slide"
             showIndicators={false}
-            className="rounded-[1rem]"
+            className="rounded-[1rem] hidden md:block"
             centerMode={true}
           >
             {prjcts.map((project) => (
@@ -85,6 +82,40 @@ const Projects: React.FC = () => {
               </div>
             ))}
           </Carousel>
+          <div className="h-[50vh] flex flex-col items-center overflow-y-scroll md:hidden">
+            {prjcts.map((project) => (
+              <div key={project.id} className="mb-6">
+                <a
+                  href={project.deployUrl ? project.deployUrl : "#"}
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <img
+                    src={project.imgUrl}
+                    alt={project.name}
+                    className="rounded-[1rem]"
+                  />
+                </a>
+                <div className="text-center">{project.name}</div>
+                <div className="flex  justify-center">
+                  <a href={project.srcCode} rel="noopener" target="_blank">
+                    <button className="mr-2 px-4 py-[5px]  w-[80px] bg-[#000000b4] rounded-lg cursor-pointer hover:bg-black/90">
+                      Code
+                    </button>
+                  </a>
+                  <a
+                    href={project.deployUrl ? project.deployUrl : "#"}
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <button className="px-4 py-[5px] w-[80px] bg-[#000000c3] rounded-lg cursor-pointer hover:bg-black/90 ">
+                      Live
+                    </button>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

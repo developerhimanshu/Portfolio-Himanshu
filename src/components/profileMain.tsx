@@ -14,12 +14,13 @@ const ProfileMain: React.FC = () => {
         <p>
           I always try to build{" "}
           <span className="text-yellow-500">high quality</span> and{" "}
-          <span className="text-yellow-500">responsive apps</span>
+          <span className="text-yellow-500">responsive apps </span>
           with <span className="text-yellow-500">good and unique design.</span>
         </p>
         <p>
-          Sometimes I do <span className="text-yellow-500">Leetcode</span> to
-          sharpen my problem solving skills.
+          I consistently practice on{" "}
+          <span className="text-yellow-500">Leetcode</span> to sharpen my
+          problem solving skills.
         </p>
 
         <div className="flex flex-col gap-4">
