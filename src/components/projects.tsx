@@ -17,7 +17,7 @@ const prjcts: Project[] = [
     name: "Smart farming",
     description: "Smart farming web application",
     imgUrl: "/images/project1.png",
-    deployUrl: "https://smart-farming-app.netlify.app/",
+    deployUrl: "https://smart-farming-developerhimanshu1.vercel.app/",
     srcCode: "https://github.com/developerhimanshu/smart-farming",
   },
   {
