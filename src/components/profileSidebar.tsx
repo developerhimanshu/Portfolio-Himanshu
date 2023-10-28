@@ -13,7 +13,7 @@ const ProfileSidebar: React.FC = () => {
         ></div>
         <h1 className="text-4xl font-semibold ">Himanshu Singh</h1>
         <p className="bg-[#2B2B2C] font-thin px-3 py-1 rounded-xl text-gray-300">
-          Frontend Developer
+          Full-Stack Developer
         </p>
         <div className="flex gap-4">
           <a

@@ -7,8 +7,8 @@ const ProfileMain: React.FC = () => {
       <div className="w-[80px] border-b-[5px] border-b-yellow-500 "></div>
       <div className="mt-7 text-gray-300 text-[1.3rem] flex flex-col gap-4">
         <p>
-          I'm a <span className="text-yellow-500">frontend Developer</span> from
-          India, I build apps using{" "}
+          I'm a <span className="text-yellow-500">Full-Stack developer</span>{" "}
+          from India, I build apps using{" "}
           <span className="text-yellow-500">React.js</span>
         </p>
         <p>
@@ -38,7 +38,7 @@ const ProfileMain: React.FC = () => {
           </p>
           <p>
             <span className="text-yellow-500">Currently Exploring: </span>
-            MongoDB and Express.js
+            MongoDB, Node.js, ,Express.js and various backend technologies.
           </p>
         </div>
       </div>
